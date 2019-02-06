@@ -10,14 +10,17 @@ namespace EquazioniLibrary
     {
         public static bool IsDetermined(double a)
         {
+            bool risp = true;
+
             if (a == 0)
             {
-                return false;
+                risp = false;
             } 
             else
             {
-                return true;
+                risp = true;
             }
+            return risp;
         }
         
     }
